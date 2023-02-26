@@ -1,0 +1,12 @@
+package com.example.station_de_ski2.Service;
+
+import com.example.station_de_ski2.entities.Piste;
+
+import java.util.List;
+public interface IPisteService {
+    List<Piste> retrieveAllPistes();
+    Piste addPiste(Piste piste);
+    Piste updatePiste(Piste piste);
+    Piste retrievePiste(Long numPiste);
+    void deletePiste(Long numPiste);
+}
